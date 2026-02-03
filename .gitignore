@@ -1,0 +1,13 @@
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.pdb
+*.log
+.DS_Store
+.vscode/
+build/
+**/build/
+**/Debug/
+**/Release/
