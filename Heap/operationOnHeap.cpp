@@ -30,6 +30,36 @@ public:
         return vec[0];
     }
 
+void pop() {
+    if (vec.size() == 0) return;
+
+    swap(vec[0], vec[vec.size() - 1]);
+    vec.pop_back();
+    heapify(0);   // start heapify from root
+}
+
+void heapify(int i) {
+    if (i >= vec.size()) return;
+
+    int l = 2 * i + 1;
+    int r = 2 * i + 2;
+
+    int maxI = i;
+
+    if (l < vec.size() && vec[l] > vec[maxI]) {
+        maxI = l;
+    }
+
+    if (r < vec.size() && vec[r] > vec[maxI]) {
+        maxI = r;
+    }
+
+    if (maxI != i) {
+        swap(vec[i], vec[maxI]);
+        heapify(maxI);
+    }
+}
+
     bool empty() {
         return vec.size() == 0;
     }
