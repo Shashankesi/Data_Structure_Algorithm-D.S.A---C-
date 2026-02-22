@@ -1,4 +1,4 @@
-# 📚 Data Structures & Algorithms in C++..
+# 📚 Data Structures & Algorithms in C++
 
 Welcome to my **Data Structures and Algorithms (DSA)** repository 🚀  
 This repository contains **well-structured, optimized, and beginner-friendly C++ implementations** of important DSA concepts, designed for **learning, practice, and interview preparation**.
