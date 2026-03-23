@@ -1,4 +1,4 @@
-// pair sum by using unordered_map
+// pair sum by using unordered_map..
 #include<iostream>
 #include<unordered_map>
 using namespace std;
