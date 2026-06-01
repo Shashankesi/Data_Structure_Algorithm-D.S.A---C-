@@ -37,6 +37,5 @@ int main() {
 
     Node* ans = LCA(root, 4, 5);
 
-    cout <<"LCA: "<< ans->data;
     return 0;
 }
