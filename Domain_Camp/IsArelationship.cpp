@@ -8,7 +8,7 @@ public:
     }
 };
 
-class Dog : public Animal {  // Dog IS-A Animal
+class Dog : public Animal {  
 public:
     void bark() {
         cout << "Dog is barking" << endl;
