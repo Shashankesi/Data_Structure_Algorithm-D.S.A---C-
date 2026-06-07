@@ -12,7 +12,7 @@ public class PalindromeLambda {
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
 
-        // Lambda Function
+     
         Palindrome palindrome = s -> {
             String reversed = new StringBuilder(s).reverse().toString();
             return s.equalsIgnoreCase(reversed);
