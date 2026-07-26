@@ -30,7 +30,17 @@ class Graph{
         }
     }
 
-    void dfs(){
+    void dfs(int u , vector<bool>&vis){
+        vis[u]=true;
+        cout<<u<<" ";
+
+        list<int>neighbour=l[u];
+
+        for(int v:neighbour){
+            if(!vis[v]){
+                dfs(v,vis);
+            }
+        }
         
     }
 };
@@ -45,6 +55,10 @@ int main(){
     graph.addEdge(2,4);
 
     graph.print();
+    vector<bool>vis(7,false);
+    cout<<"The dfs flow:"<<endl;
+
+    graph.dfs(0,vis);
 
 
 }
